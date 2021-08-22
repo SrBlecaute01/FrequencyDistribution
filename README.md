@@ -1,5 +1,5 @@
 # Frequency distribution
-Simple frequency distribution generation to create frequency table and histogram using using matplotlib and pandas.simple frequency distribution generation to create frequency table and histogram using using matplotlib and pandas.
+Simple frequency distribution generation to create frequency table and histogram using using matplotlib and pandas.
 
 <p float="left" align ='center'>
   <img src="https://github.com/SrBlecaute01/FrequencyDistribution/raw/master/assets/frequency_table.png" alt="Histogram" width="700"/>
