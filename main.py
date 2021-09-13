@@ -41,14 +41,11 @@ max_observed = numpy.max(observations)
 print("Calculating amount of class (k), amplitude (at) and interval (h)...")
 
 # rule of Sturges to get amount of class: k = 1 + 3.322 log10 n
-sturges = Decimal(1 + 3.322 * math.log10(observations.size))
+k = math.ceil(Decimal(1 + 3.322 * math.log10(observations.size)))
 # get the total amplitude calculated by maximum amplitude - minimum amplitude
 amplitude = max_observed - mim_observed
 # get the amplitude of interval of classes calculated by: amplitude / k
-interval = math.ceil(amplitude / sturges)
-
-# round sturges
-k = math.ceil(sturges)
+interval = math.ceil(amplitude / k)
 
 # get all class based in interval
 clazz = []
